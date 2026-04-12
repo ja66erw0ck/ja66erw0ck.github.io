@@ -1,8 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>Still Alive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NibbleX</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 60px; }
+        h1 { color: var(--accent-color); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { border-bottom: 2px solid var(--accent-color); display: inline-block; padding-bottom: 5px; margin-top: 40px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 8px; margin-bottom: 20px; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .date { color: var(--accent-color); font-weight: bold; font-size: 0.9rem; }
+        .tech-stack { font-size: 0.85rem; color: #94a3b8; margin-top: 10px; }
+        .footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: #64748b; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>NibbleX</h1>
+            <p>고성능 서버 개발 전문 기지</p>
+        </header>
+        <section>
+            <h2>Still Alive</h2>
+            <div class="card">
+                <div class="date">2026 - Present</div>
+                <h3>MMORPG 개발 중</h3>
+                <p>드워프 포트리스를 MMORPG로 개발 중 입니다.</p>
+                <div class="tech-stack">Rust, TypeScript, PostgreSQL, ...</div>
+            </div>
+        </section>
+
+        <div class="footer">
+            © 2026 NibbleX Co., Ltd. All Rights Reserved.
+        </div>
+    </div>
 </body>
-</html>
