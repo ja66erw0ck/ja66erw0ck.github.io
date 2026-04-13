@@ -34,7 +34,17 @@
     <div class="container">
         <header>
             <h1>NibbleX</h1>
-            <p>고성능 서버 개발 전문 기지 입니다. 메일 주세요~ work@nibblex.co.kr</p>
+            <p>고성능 서버 개발 전문 기지 입니다.</p>
+            <p>
+                Contact: <code>work@nibblex.co.kr</code> 
+                <button onclick="copyEmail()" style="cursor:pointer; background:none; border:1px solid #ccc; color:#ccc; font-size:12px;">Copy</button>
+            </p>
+            <script>
+                function copyEmail() {
+                    navigator.clipboard.writeText('work@nibblex.co.kr');
+                    alert('메일 주소가 복사되었습니다. (Source Copied!)');
+                }
+            </script>
         </header>
         
         <section>
