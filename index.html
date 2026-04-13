@@ -37,12 +37,11 @@
             <p>고성능 서버 개발 전문 기지 입니다.</p>
             <p>
                 Contact: <code>work@nibblex.co.kr</code> 
-                <button onclick="copyEmail()" style="cursor:pointer; background:none; border:1px solid #ccc; color:#ccc; font-size:12px;">Copy</button>
+                <button onclick="copyEmail(this)" style="cursor:pointer; background:none; border:1px solid #ccc; color:#ccc; font-size:12px;">Copy</button>
             </p>
             <script>
-                function copyEmail() {
+                function copyEmail(btn) { // 매개변수로 버튼 객체를 직접 받음
                     navigator.clipboard.writeText('work@nibblex.co.kr');
-                    const btn = document.querySelector('button'); // 혹은 id/class 지정
                     const originalText = btn.innerText;
                     btn.innerText = 'Copied!';
                     setTimeout(() => { btn.innerText = originalText; }, 2000);
