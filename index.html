@@ -42,7 +42,10 @@
             <script>
                 function copyEmail() {
                     navigator.clipboard.writeText('work@nibblex.co.kr');
-                    alert('메일 주소가 복사되었습니다. (Source Copied!)');
+                    const btn = document.querySelector('button'); // 혹은 id/class 지정
+                    const originalText = btn.innerText;
+                    btn.innerText = 'Copied!';
+                    setTimeout(() => { btn.innerText = originalText; }, 2000);
                 }
             </script>
         </header>
