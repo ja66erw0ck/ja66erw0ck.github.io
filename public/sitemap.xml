@@ -1,0 +1,10 @@
+<!-- 우리 사이트에 어떤 페이지들이 존재하는지 구조를 한눈에 파악할 수 있도록 봇에게 친절하게 가이드를 제공하는 XML 장부 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ja66erw0ck.github.io/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
